@@ -33,7 +33,7 @@ struct complex_number sum_num(struct complex_number *n1, struct complex_number *
 
 int main(void)
 {
-    struct complex_number M = {.x = 14, .y = 6};
+    struct complex_number M = {.x = 10, .y = 10};
     print_complex_number(M);
     struct complex_number N = {.x = 3, .y = -4};
     print_complex_number(N);
