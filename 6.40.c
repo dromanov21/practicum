@@ -68,6 +68,7 @@ int main(void){
     head2->next = NULL;
     head2 = tmp2;
     
+    printf("---------------------\n");
     printf("first list: \n");
     while (head1->data != '.'){
         printf("%c", head1->data);
@@ -75,7 +76,7 @@ int main(void){
     }
     head1 = tmp1;
     
-    printf("second list: ");
+    printf("\nsecond list: ");
     while (head2->data != '.'){
         printf("%c", head2->data);
         head2 = head2->next;
