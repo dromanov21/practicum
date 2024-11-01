@@ -6,7 +6,7 @@ struct node{
     struct node *next;
 };
 
-void change_first_last(struct node *head, double same){
+void change_fir(struct node *head, double same){
     struct node *tmp = head;
     struct node *q;
     
@@ -47,7 +47,7 @@ int main(void){
     double k;
     printf("Enter the element you want to duplicate: ");
     scanf("%lf", &k);
-    change_first_last(head, k);
+    change_fir(head, k);
     printf("\n");
     printf("list after change first and last node: \n");
     while (head->data != 0){
