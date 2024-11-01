@@ -33,6 +33,7 @@ int main(void){
     }
     head->next = NULL;
     head = tmp;
+    printf("----------------------\n");
     printf("original list: \n");
     while (head->data != 0){
         printf("%lf\n", head->data);
