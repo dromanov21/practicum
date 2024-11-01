@@ -42,7 +42,7 @@ struct real_number mult_num(struct real_number *n1, struct real_number *n2)
 
 int main(void)
 {
-    struct real_number M = {.x = 2, .y = 3};
+    struct real_number M = {.x = 1, .y = 3};
     print_real_number(M);
     struct real_number N = {.x = 3, .y = 4};
     print_real_number(N);
