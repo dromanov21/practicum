@@ -33,7 +33,7 @@ void change_color(struct color_point *p, char* new_color)
 
 int main(void)
 {
-    struct color_point M = {.x = 14, .y = 6, .color = "red"};
+    struct color_point M = {.x = 10, .y = 10, .color = "red"};
     print_c_point(M);
     printf("Enter new color: ");
     char c[20];
