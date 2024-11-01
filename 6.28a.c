@@ -6,7 +6,7 @@ struct node{
     struct node *next;
 };
 
-void change_first_last(struct node *head){
+void change_fir(struct node *head){
     struct node *tmp = head;
     struct node *last;
     double first;
@@ -40,7 +40,7 @@ int main(void){
         head = head->next;
     }
     head = tmp;
-    change_first_last(head);
+    change_fir(head);
     printf("\n");
     printf("list after change firat and last node: \n");
     while (head->data != 0){
