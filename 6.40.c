@@ -33,6 +33,18 @@ void make_list(struct node *head1, struct node *head2, struct node *head3){
         }
         head1 = head1->next;
     }
+    head1 = tmp1;
+
+    while (head2->next != NULL)
+    {
+        if (occur_elem(head1, head2->data) == 0)
+        {
+            head3->data = head2->data;
+            head3->next = (struct node *)malloc(sizeof(struct node));
+            head3 = head3->next;   
+        }
+        head2 = head2->next;
+    }
     head3->next = (struct node *)malloc(sizeof(struct node));
     head3->data = '.';
     head3->next = NULL;
