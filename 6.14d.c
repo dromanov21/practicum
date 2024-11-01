@@ -16,6 +16,7 @@ void change_num(struct real_number *n)
 {
     int x1;
     int y1;
+    printf("----------------------------\n");
     printf("Enter new x: ");
     scanf("%d", &x1);
     n->x = x1;
