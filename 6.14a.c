@@ -26,7 +26,7 @@ void change_coords(struct point *p)
 
 int main(void)
 {
-    struct point M = {.x = 14, .y = 6};
+    struct point M = {.x = 10, .y = 10};
     print_point(M);
     change_coords(&M);
     print_point(M);
