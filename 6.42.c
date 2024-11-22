@@ -77,6 +77,9 @@ int main(void){
     printf("Enter second element: ");
     scanf("%lf", &value);  
     putqueue(&head, value);
+    printf("Enter third element: ");
+    scanf("%lf", &value);  
+    putqueue(&head, value);
     printl(head);
     int l = sizequeue(head);
     printf("\n");
