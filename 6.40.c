@@ -6,6 +6,7 @@ struct node
     char *data;
     struct node *next;
 };
+
 int add(struct node *head, char *elem)
 {
     int a = 0;
