@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct queue{double data; struct queue *next;};
+struct queue {
+    double data; 
+    struct queue *next;
+};
 
 void putqueue(struct queue **head, double value)
 {
@@ -22,9 +25,8 @@ void putqueue(struct queue **head, double value)
     }
 }
 
-int getqueue(struct queue **head){
-    double value;
-    value = (*head)->data;
+double getqueue(struct queue **head){
+    double value = (*head)->data;
     (*head) = (*head)->next;
     return value;
 }
@@ -85,10 +87,10 @@ int main(void){
     printf("\n");
     printf("Size of list: %d", l);
     printf("\n");
-    int k = getqueue(&head);
+    double k = getqueue(&head);
     printl(head);
     printf("\n");
     printf("Received element: ");
-    printf("%d", k);
+    printf("%lf", k);
     return 0;
 }
