@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 struct node
 {
@@ -13,7 +14,7 @@ int check(struct node *head, char *elem)
     struct node *tmp = head;
     while (head->data != ".")
     {
-        if (head->data == elem) a = 1;
+        if (strcmp(head->data == elem)==0) a = 1;
         head = head->next;
     }
     head = tmp;
