@@ -26,7 +26,7 @@ void pushstack(struct stack **head, double value)
     }
 }
 
-int popstack(struct stack **head)
+double popstack(struct stack **head)
 {
     struct stack *tmp = *head;
     struct stack *q;
@@ -105,10 +105,10 @@ int main(){
     printf("\n");
     for (int i = 0; i < 5; ++i)
     {
-        int k = popstack(&head);
+        double k = popstack(&head);
         printl(head);
         printf("\n");
-        printf("Received element: %d\n", k);
+        printf("Received element: %lf\n", k);
     }
     return 0;
 }
