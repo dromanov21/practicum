@@ -7,7 +7,7 @@ struct node
     struct node *next;
 };
 
-int add(struct node *head, char *elem)
+int check(struct node *head, char *elem)
 {
     int a = 0;
     struct node *tmp = head;
@@ -27,7 +27,7 @@ void makel(struct node *head1, struct node *head2, struct node *head3){
     
     while (head1->data != ".")
     {
-        if (add(head2, head1->data) == 0)
+        if (check(head2, head1->data) == 0)
         {
             head3->data = head1->data;
             head3->next = (struct node *)malloc(sizeof(struct node));
@@ -39,7 +39,7 @@ void makel(struct node *head1, struct node *head2, struct node *head3){
     head2 = tmp2;
     while (head2->data != ".")
     {
-        if (add(head1, head2->data) == 0)
+        if (check(head1, head2->data) == 0)
         {
             head3->data = head2->data;
             head3->next = (struct node *)malloc(sizeof(struct node));
